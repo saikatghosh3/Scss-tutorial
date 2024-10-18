@@ -58,4 +58,20 @@ button {
 }
 .btn-1:hover {
   background-color: aqua;
+}
+
+.red-text {
+  color: red;
+}
+
+.green-text {
+  color: green;
+}
+
+.blue-text {
+  color: blue;
+}
+
+.black-text {
+  color: black;
 }/*# sourceMappingURL=main.css.map */

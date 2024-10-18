@@ -75,3 +75,22 @@ button{
         background-color: aqua;
     }
 }
+
+
+// map over item using @each
+// For example .red-text{color:red}
+// .red-text{color:red}
+// .green-text{color:red}
+// .blue-text{color:red}
+// .black-text{color:red}
+
+// the above code can be written as
+//@each $color in red,green,blue black{
+//     .#{$color}-text {color: $color;}
+// } 
+
+
+// The below code is applying on the section>div in the html file
+@each $color in red,green,blue, black{
+    .#{$color}-text {color: $color;}
+}
