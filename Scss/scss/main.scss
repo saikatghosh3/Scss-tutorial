@@ -1,0 +1,77 @@
+@import './variable';
+// variable should be placed at the top so that (if we create more files all  will get the access fo variable)
+@import './extend';
+@import './mixin';
+
+
+header{
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+
+    .logo-area{
+    a{
+        text-decoration: none;
+        h1{
+            color: $primary-color;
+            // font-size: $heading-1;
+            text-transform: uppercase;
+            @include serFontSize(medium);
+            // it is done by the help of if else loop in the mixin section
+        }
+    }
+    }
+    nav{
+        ul{
+            li{
+                display: inline-block;
+                a{
+                    text-decoration: none;
+                    color: $text-color;
+                    font-size: $para-font-size;
+                    padding: 10px 30px;
+                    border: 1px solid $border-color;
+                    text-transform: capitalize;
+                    &:hover{
+                        transition: .3s all ease;
+                        background: $border-color;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// The below one is extend method
+// button{
+//     @extend %btn;
+// }
+
+
+// header button{
+//    @extend %btn;
+// }
+// we can use the above button like that also.
+
+// .btn-1{
+//     @extend %btn;
+//     &:hover{
+//         background-color: red;
+//     }
+// }
+
+button{
+    @include btn();
+}
+.btn-2{
+    @include btn();
+    &:hover{
+        background-color: aqua;
+    }
+}
+.btn-1{
+    @include btn();
+    &:hover{
+        background-color: aqua;
+    }
+}

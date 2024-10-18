@@ -1,0 +1,61 @@
+header {
+  display: flex;
+  text-align: center;
+  justify-content: space-between;
+}
+header .logo-area a {
+  text-decoration: none;
+}
+header .logo-area a h1 {
+  color: blue;
+  text-transform: uppercase;
+  font-size: 20px;
+}
+header nav ul li {
+  display: inline-block;
+}
+header nav ul li a {
+  text-decoration: none;
+  color: #222;
+  font-size: 16px;
+  padding: 10px 30px;
+  border: 1px solid red;
+  text-transform: capitalize;
+}
+header nav ul li a:hover {
+  transition: 0.3s all ease;
+  background: red;
+}
+
+button {
+  border: 1px solid #ddd;
+  background: #ddd;
+  color: #222;
+  padding: 10px 30px;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+.btn-2 {
+  border: 1px solid #ddd;
+  background: #ddd;
+  color: #222;
+  padding: 10px 30px;
+  cursor: pointer;
+  border-radius: 10px;
+}
+.btn-2:hover {
+  background-color: aqua;
+}
+
+.btn-1 {
+  border: 1px solid #ddd;
+  background: #ddd;
+  color: #222;
+  padding: 10px 30px;
+  cursor: pointer;
+  border-radius: 10px;
+}
+.btn-1:hover {
+  background-color: aqua;
+}/*# sourceMappingURL=main.css.map */
